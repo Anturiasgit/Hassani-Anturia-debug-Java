@@ -18,10 +18,11 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(filepath));
-
+                    //ouvre l'écriture dans fichier
             for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
-                writer.write(entry.getKey() + ": " + entry.getValue());
-                writer.newLine();
+               //lit les symptomes
+                writer.write(entry.getKey() + ": " + entry.getValue()); //écrit
+                writer.newLine(); //passe à la ligne
             }
 
             writer.close();
