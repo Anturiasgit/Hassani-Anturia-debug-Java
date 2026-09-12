@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AnalyticsCounter {
+
 	private static int headCount;	
 	private static int rashCount;		
 	private static int pupilCount;		
